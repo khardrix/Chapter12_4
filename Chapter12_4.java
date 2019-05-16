@@ -42,9 +42,13 @@ public class Chapter12_4 {
             e.printStackTrace();
         }
         finally {
-            writer.flush();
-            writer.close();
-            reader.close();
+            if(writer != null) {
+                writer.flush();
+                writer.close();
+            }
+            if(reader != null) {
+                reader.close();
+            }
         }
     }
 }
