@@ -19,7 +19,7 @@ public class Chapter12_4 {
         // Local Variables
         String[] words = new String[1_000];
         String fileName = "NetworkingProject.txt";
-        String newFileName = "BackwardsNetworkingProject.txt";
+        String newFileName = "BackwardsText.txt";
         PrintWriter writer = null;
         Scanner reader = null;
 
@@ -46,6 +46,7 @@ public class Chapter12_4 {
                 writer.flush();
                 writer.close();
             }
+
             if(reader != null) {
                 reader.close();
             }
